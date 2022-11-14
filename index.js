@@ -11,6 +11,7 @@ const clientUrl = `http://localhost:${port}`;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
+// prevent same origin security policy with CORS
 app.use(cors());
 app.use(express.json());
 
